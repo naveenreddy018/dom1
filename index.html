@@ -1,0 +1,134 @@
+
+<!-- •	Objective: Create a <p> element and add it to the document with the text “Welcome
+     to JavaScript DOM manipulation”. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let para = document.createElement("p")
+        console.log(para)
+        para.innerText = "Whenever you find yourself on the side of the majority, it is time to pause and reflect."
+        let body = document.body.appendChild(para)
+    </script>
+</body>
+</html> -->
+<!-- •	Objective: Create a <div> that contains two headings,\
+     <h1> and <h2>, with different text. -->
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let div = document.createElement("div")
+        let heading1 = document.createElement("heading")
+        let heading2 = document.createElement("heading")
+        div.appendChild(heading1)
+        div.appendChild(heading2)
+        let body = document.body.appendChild(div)
+        console.log(body)
+        heading1.innerHTML = " hello naveen <br> "
+        heading2.innerHTML = " hello reddy "
+    </script>
+</body>
+</html>  -->
+<!-- •	Objective: Create an unordered list (<ul>) with three
+ list items (<li>), each containing different text. -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ul = document.createElement("ul")
+        let li1 = document.createElement("li")
+        let li2 = document.createElement("li")
+        let li3 = document.createElement("li")
+        ul.appendChild(li1)
+        ul.appendChild(li2)
+        ul.appendChild(li3)
+        li1.innerText = " hello"
+        li2.innerText = " to my"
+        li3.innerText = " world"
+        let body = document.body.appendChild(ul)
+        console.log(body)
+    </script>
+</body>
+</html> -->
+<!-- •	Objective: Create a table with two rows and two columns,
+  and fill each cell with different text. -->
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{border: 2px solid ;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let table = document.createElement("table")
+        let tr1 = document.createElement("tr")
+        let tr2 = document.createElement("tr")
+        let row1td1 = document.createElement("td")
+        let row1td2 = document.createElement("td")
+        let row2td1 = document.createElement("td")
+        let row2td2 = document.createElement("td")
+        table.appendChild(tr1)
+        table.appendChild(tr2)
+        tr1.appendChild(row1td1)
+        tr1.appendChild(row1td2)
+        tr2.appendChild(row2td1)
+        tr2.appendChild(row2td2)
+        let body = document.body.appendChild(table)
+        console.log(body)
+        row1td1.innerText = " hello"
+        row1td2.innerText = " hello2"
+        row2td1.innerText = " hello3"
+        row2td2.innerText = " hello4"
+        
+    </script>
+
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = "https://www.thecoderpedia.com/wp-content/uploads/2020/06/PHP-vs-Java-vs-JavaScript-1024x1021.jpg?x80061";
+        img.width = 300;
+        div.appendChild(img);
+      document.body.appendChild(div); 
+    </script>
+</body>
+</html>
